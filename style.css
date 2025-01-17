@@ -1,0 +1,117 @@
+* {
+    font-family: Signika Negative;
+    color: rgb(202, 192, 212);
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+body {
+    background-color: rgb(27, 27, 33);
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    display: flex;
+    justify-content: end;
+}
+
+main {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}
+
+#container {
+    padding: 20px;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.137);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-bottom: 6px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 6px;
+}
+
+.formbox {
+    display: flex;
+    padding: 4px;
+}
+
+
+
+/* Oculta o checkbox padrão */
+.checkbox-label input[type="checkbox"] {
+    display: none;
+}
+
+/* Estilo da caixa visual da checkbox */
+.checkmark {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(202, 192, 212);
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 8px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+/* Estilo para o estado "checked" */
+.checkbox-label input[type="checkbox"]:checked+.checkmark {
+    background-color: rgb(94, 61, 114);
+}
+
+/* Marca de verificação */
+.checkbox-label input[type="checkbox"]:checked+.checkmark::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 12px;
+    border: solid rgb(255, 189, 227);
+    border-width: 0 5px 3px 0 ;
+    transform: rotate(45deg);
+    position: relative;
+    left: 6px;
+    top: 2px;
+}
+
+/* button{
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(27, 27, 33);
+    background-color: rgb(202, 192, 212);
+    border: 0;
+    border-radius: 10px;
+    padding: 8px;
+    cursor: pointer;
+} */
+
+.button-box{
+    margin: auto;
+    display: flex;
+    width: 60%;
+    justify-content: end;
+}
+
+.button-box > img{
+    width: 25px;
+    cursor: pointer;
+}
